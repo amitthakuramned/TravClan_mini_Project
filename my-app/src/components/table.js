@@ -4,6 +4,7 @@ import { GetData } from "../utills/requestApi";
 import axios from "axios";
 import clsx from "clsx";
 import { lighten, makeStyles } from "@material-ui/core/styles";
+import { Button } from "react-bootstrap";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
@@ -78,9 +79,9 @@ const headCells = [
   },
   { id: "Email", numeric: true, disablePadding: false, label: "Email" },
   { id: "Phone", numeric: true, disablePadding: false, label: "Phone No." },
-  { id: "Bid", numeric: true, disablePadding: false, label: "MaxBid" },
-  { id: "Bid", numeric: true, disablePadding: false, label: "MnBid" },
-  { id: "Bid", numeric: true, disablePadding: false, label: "Premium" },
+  { id: "maxBid", numeric: true, disablePadding: false, label: "MaxBid" },
+  { id: "minBid", numeric: true, disablePadding: false, label: "MnBid" },
+  { id: "Premium", numeric: true, disablePadding: false, label: "Premium" },
 ];
 
 function EnhancedTableHead(props) {
