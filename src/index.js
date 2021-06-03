@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./screens/Home";
+import Header from "./components/header";
+import Instaclone from "./screens/Instaclone";
+import Footer from "./components/footer";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import store from "./store";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Provider store={store}>
+      <Header />
+      <Instaclone />
+      <Footer />
+    </Provider>
   </React.StrictMode>,
   document.getElementById("root")
 );
