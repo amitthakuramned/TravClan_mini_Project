@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Header from "./components/header";
 import Instaclone from "./screens/Instaclone";
+import Roadmap from "./screens/roadmap";
 import Footer from "./components/footer";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
@@ -11,9 +12,7 @@ import store from "./store";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Header />
-      <Instaclone />
-      <Footer />
+      <Roadmap />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
