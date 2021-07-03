@@ -3,9 +3,9 @@ import { Button, Row } from "react-bootstrap";
 import ReactDOM from "react-dom";
 import Card from "../components/card";
 import "../assets/style.scss";
-import { Game } from "../components/gamecomp";
+import Profile from "../components/Profile";
 
-class Ticktoe extends React.Component {
+class Learntoolkit extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -14,11 +14,11 @@ class Ticktoe extends React.Component {
       <>
         <div className="container">
           <div className="maincomp">
-            <Game />
+            <Profile />
           </div>
         </div>
       </>
     );
   }
 }
-export default Ticktoe;
+export default Learntoolkit;

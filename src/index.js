@@ -4,15 +4,22 @@ import "./index.css";
 import Header from "./components/header";
 import Instaclone from "./screens/Instaclone";
 import Roadmap from "./screens/roadmap";
+import Learntoolkit from "./screens/learntoolkit";
 import Footer from "./components/footer";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import store from "./store";
+// import store from "./store";
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "./reducer/userReducer";
+
+const store = configureStore({
+  reducer: userReducer,
+});
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Roadmap />
+      <Learntoolkit />
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
